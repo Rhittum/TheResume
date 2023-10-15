@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+body {
+    background-color: #131316;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    display: grid;
+    place-items: left;
+    align-content: center;
+    min-height: 80vh;
+    margin: 50px;
+}
+
+.img {
+    position: relative;
+    left: 100px;
+    top: 10px;
+    border-radius: 100%;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.hidden:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.hidden:nth-child(3) {
+    transition-delay: 0ms;
+}
+
+.hidden:nth-child(4) {
+    transition-delay: 200ms;
+}
+
+.hidden:nth-child(5) {
+    transition-delay: 0ms;
+}
+
+.hidden1 {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(50%);
+    transition: all 2s;
+}
+
+.hidden1:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.hidden1:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.hidden1:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+.hidden1:nth-child(5) {
+    transition-delay: 800ms;
+}
+
+.hidden2 {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 2s;
+}
+
+.hidden2:nth-child(2) {
+    transition-delay: 400ms;
+}
+
+.hidden2:nth-child(3) {
+    transition-delay: 0ms;
+}
+
+.hidden2:nth-child(4) {
+    transition-delay: 400ms;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.header1 {
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    top: 80px;
+    position: relative;
+    margin: 20px;
+}
+
+.header2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+.header3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #131316;
+    color: #fff;
+    padding: 10px;
+    overflow-x: hidden;
+    gap: 50px;
+    height: 100vh;
+}
+
+.header4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #131316;
+    color: #fff;
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #282A35;
+    color: white;
+    position: relative;
+    width: 200px;
+}
+
+.btn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #282A35; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    width: 50px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+.left-header {
+    margin: 0;
+    padding: 0;
+}
+
+.right-header {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.images1 {
+    position: relative;
+    right: 150px;
+    top: 100px;
+}
+
+.images2 {
+    position: relative;
+    right: 55px;
+    top: 50px;
+}
+
+.images3 {
+    position: relative;
+    right: 150px;
+    top: 0px;
+}
+
+.images4 {
+    position: relative;
+    right: 55px;
+    bottom: 100px;
+}
